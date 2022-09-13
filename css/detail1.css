@@ -1,0 +1,489 @@
+/*Font Import Files*/
+@font-face {
+  font-family: Montserrat;
+  src: url("Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("Fonts/static/Montserrat-Bold.ttf");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Style for the navigation List*/
+/*Style for the Main Content of the Page*/
+
+main {
+  background-color: rgb(249, 249, 249);
+}
+
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.headerLogo {
+  margin: 0px 5% 0px 0%;
+  padding: 0.5%;
+}
+
+.headerLogo figure img {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.navList {
+  padding: 0.5% 5%;
+  margin: 0.5% 0% 0.5% 22%;
+  width: 50%;
+}
+
+.navList ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navList li {
+  margin: 2% 0%;
+  padding: 1% 1%;
+}
+
+.navList li a {
+  letter-spacing: 2px;
+  font-family: montserratBold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.navList li a:hover {
+  color: orange;
+  transition: all 0.75s;
+}
+
+.bannerContentEvent {
+  background-color: rgb(32, 32, 32);
+}
+.navList nav ul a:hover {
+  color: orange;
+  transition: all 0.75s;
+}
+
+.menu {
+  display: none;
+}
+/*To-do List*/
+.toDoList {
+  background-color: #fff;
+  padding: 1% 4%;
+}
+
+.toDoListContent {
+  margin-top: 2%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.toDoListContentLeft {
+  width: 22%;
+}
+.toDoListContentLeft ul li {
+  width: 80%;
+  height: 64px;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+}
+.toDoListContentLeft ul li a {
+  font-size: 16px;
+  color: #999999;
+  padding-left: 10%;
+  display: block;
+}
+.toDoListContentLeft ul li:hover {
+  width: 100%;
+  border-color: #97c7f8;
+  transition: all 0.3s;
+}
+.toDoListContentLeft ul li:hover a {
+  color: #333;
+}
+.toDoListContentRight {
+  width: 74%;
+  border: 1px solid #c7c7c7;
+  padding: 2%;
+}
+.textAlign {
+  text-align: center;
+}
+.mainColor {
+  color: #037df7;
+}
+.width100 {
+  width: 100%;
+}
+.toDoListContentRight .subtitle {
+  margin-top: 1.5%;
+}
+.toDoListContentRight .howTo {
+  margin-top: 3%;
+}
+.toDoListContentRight .step {
+  margin-top: 5%;
+}
+.toDoListContentRight .marginImg {
+  margin: 3% 0;
+}
+.toDoListContentRight .desc {
+  margin: 1% 0;
+  font-size: 20px;
+}
+.toDoListContentRight .padding2 {
+  padding-left: 2%;
+}
+
+/* DetaiList Styling */
+.detaiList {
+  background-color: #fff;
+  padding: 2% 4%;
+}
+.detaiList span {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.detaiListContent {
+  overflow: hidden;
+  padding: 2% 0;
+}
+.detaiListContent img {
+  float: left;
+  margin: 0 30px 0 0;
+  width: 25%;
+  border: 1px solid #c7c7c7;
+  padding: 0.5%;
+}
+.detaiListContent p {
+  margin-bottom: 10px;
+  text-indent: 2em;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+/*Footer Styling*/
+
+footer {
+  background-color: rgb(33, 35, 48);
+  display: flex;
+  flex-direction: column;
+}
+
+.upperFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+.descFooter {
+  color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-top: 1%;
+  margin-left: 2.5%;
+}
+
+.footerLogo img {
+  margin: 0.5%;
+  padding: 5% 1% 1% 15%;
+  width: 300px;
+  height: auto;
+}
+
+.footerLogo figcaption {
+  margin: 0.5% 4%;
+  padding: 3% 1% 1% 15%;
+  width: 89%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.linksFooter {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.linksFooter h2 {
+  color: rgb(224, 224, 224);
+  font-family: MontserratBold;
+  letter-spacing: 1px;
+  margin: 2%;
+  padding: 3%;
+  width: 75%;
+}
+
+.linksFooter nav {
+  margin: 1.5%;
+  padding: 3%;
+  width: 75%;
+}
+
+.linksFooter ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.linksFooter li {
+  margin: 1%;
+  font-size: 13px;
+  padding: 1%;
+  list-style: none;
+  color: white;
+}
+
+.linksFooter a {
+  color: white;
+  text-decoration: none;
+  font-family: MontserratBold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.linksFooter a:hover {
+  color: orange;
+  transition: all 0.75s;
+}
+
+.feedbackFooter {
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  margin-left: 2.5%;
+}
+
+.feedbackFooter h2 {
+  color: rgb(224, 224, 224);
+  font-family: MontserratBold;
+  letter-spacing: 1px;
+  margin: 2% 2% 0% 2%;
+  padding: 3% 3% 0% 4%;
+  width: 100%;
+}
+
+.feedbackFooter form {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 2% 2% 2%;
+  padding: 3%;
+  justify-content: space-between;
+}
+
+.feedbackFooter label {
+  color: rgb(224, 224, 224);
+  font-family: MontserratBold;
+  margin: 2%;
+  padding: 0%;
+}
+
+.feedbackFooter input {
+  margin: 2%;
+  padding: 0%;
+  width: 50%;
+  height: auto;
+}
+
+.feedbackFooter textarea {
+  margin: 2%;
+  padding: 0%;
+  width: 90%;
+  height: 150px;
+}
+
+.feedbackFooter .submitBtn {
+  margin: 2%;
+  padding: 0%;
+  width: 20%;
+  height: auto;
+}
+
+.lowerFooter {
+  background-color: rgb(43, 45, 58);
+  color: rgb(94, 97, 106);
+}
+
+.lowerFooter section {
+  text-align: center;
+  padding: 0.5%;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .headerLogo figure img {
+    width: 140px;
+  }
+  .menu,
+  .navList ul {
+    display: block;
+  }
+  .navContent {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .navList {
+    padding: 0;
+    width: auto;
+    margin: 0px 0.5% 0px 0%;
+  }
+  .navList nav {
+    width: 300px;
+    padding: 5px 0 10px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+  }
+  .upperFooter {
+    display: block;
+  }
+  .descFooter,
+  .linksFooter,
+  .feedbackFooter {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .footerLogo img,
+  .footerLogo figcaption,
+  .linksFooter h2,
+  .linksFooter nav,
+  .feedbackFooter h2,
+  .feedbackFooter form,
+  .feedbackFooter label {
+    margin: 0;
+    padding: 0;
+  }
+  .footerLogo figcaption,
+  .linksFooter h2,
+  .linksFooter nav {
+    width: 100%;
+  }
+  .linksFooter li {
+    padding: 0;
+  }
+  .feedbackFooter input,
+  .feedbackFooter textarea,
+  .feedbackFooter .submitBtn {
+    margin: 2% 0;
+    line-height: 36px;
+    width: 100%;
+  }
+  .feedbackFooter .submitBtn {
+    height: 40px;
+  }
+
+  .toDoList {
+    padding: 1%;
+  }
+  .toDoListContent {
+    display: block;
+  }
+  .toDoListContentLeft {
+    width: 100%;
+    overflow: hidden;
+  }
+  .toDoListContentLeft ul li {
+    width: 32%;
+    float: left;
+    margin: 0 2% 2% 0;
+    justify-content: center;
+  }
+  .toDoListContentLeft ul li:hover {
+    width: 32%;
+  }
+  .toDoListContentLeft ul li:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .toDoListContentLeft ul li a {
+    padding: 0 1%;
+  }
+  .toDoListContentRight {
+    width: 100%;
+  }
+  .toDoListContentRight .padding2 {
+    padding: 0;
+  }
+  .detaiList {
+    padding: 1%;
+  }
+  .detaiListContent img {
+    width: 39%;
+  }
+}
+@media (max-width: 768px) {
+  .toDoList h1 {
+    font-size: 24px;
+  }
+  .toDoList h3 {
+    font-size: 18px;
+  }
+  .toDoList img {
+    width: 100%;
+  }
+  .toDoListContentLeft ul li a {
+    font-size: 14px;
+  }
+  .toDoListContentLeft ul li {
+    width: 49%;
+  }
+  .toDoListContentLeft ul li:hover {
+    width: 49%;
+  }
+  .toDoListContentLeft ul li:nth-of-type(3n) {
+    margin-right: 2%;
+  }
+  .toDoListContentLeft ul li:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .toDoListContentRight .desc {
+    font-size: 14px;
+  }
+  .detaiListContent img {
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 474px) {
+}

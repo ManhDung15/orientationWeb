@@ -1,0 +1,601 @@
+/*Font Import Files*/
+@font-face{
+    font-family: Montserrat;
+    src: url("Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: MontserratBold;
+    src: url("Fonts/static/Montserrat-Bold.ttf");
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;    
+}
+
+/*Style for the navigation List*/
+/*Style for the Main Content of the Page*/
+
+main{
+    background-color: rgb(249, 249, 249);
+}
+
+.navContent{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.headerLogo{
+    margin: 0px 5% 0px 0%;
+    padding: 0.5%;
+
+}
+
+
+.headerLogo figure img{
+ 
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.navList{
+    padding: 0.5% 5%;
+    margin: 0.5% 0% 0.5% 22%;
+    width: 50%;
+}
+
+.navList ul{
+
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navList li{
+
+    margin: 2% 0%;
+    padding: 1% 1%;
+}
+
+.navList li a{
+    letter-spacing: 2px;
+    font-family: montserratBold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.navList li a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+.bannerContentEvent{
+    background-color: rgb(32, 32, 32);
+}
+
+.bannerEventLogo{
+    background-image: linear-gradient( 
+        rgba(0, 0, 0, 0.5), rgba(10, 11, 63, 0.5) ),
+        url("Images/studentEventPage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    width: auto;
+    text-align: center;
+}
+.navList nav ul a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+.bannerEventLogo h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 100px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    line-height: 125%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.bannerEventLogo span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: MontserratBold;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: orange;
+    line-height: 125%;
+}
+.bannerEventLogo p {
+    display: inline-block;
+    text-align: center;
+    margin: 1% 6% 2.5%;
+    padding: 0.5% 1%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b74ea;
+    background-color: #b4d7ff;
+}
+
+.eventStudentHeader{
+    margin:5% 3% 2% 3%;
+}
+
+.eventStudentHeader h1{
+    font-family: MontserratBold;
+}
+
+.eventStudentContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.eventBusiness,
+.eventOrientation{
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.businessDesc,
+.orientationDesc{
+    display: flex;
+    flex-direction: column ;
+    margin: 0% 2%;
+    font-family: Montserrat;
+}
+
+.businessDesc section,
+.orientationDesc section{
+    margin: 0% 5% 5% 5%;
+}
+
+.businessDesc section span,
+.orientationDesc section span{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+}
+
+.businessDesc .descriptionBusiness,
+.orientationDesc .descriptionOrientation{
+    width: 80%;  
+}
+.menu {
+    display: none;
+}
+
+/*Freshmen Styling*/
+.freshmen{
+    background-color: rgb(255, 255, 255);
+    padding: 0.25%;
+}
+
+.freshmenHeader{
+    margin: 1% 5.5%;
+    padding: 1%;
+}
+
+.freshmenHeader h1{
+    margin: 0.5% 1%;
+    color: rgb(46, 46, 46);
+    font-family: MontserratBold;
+    display: inline-block;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.freshmenHeader span{
+    color: #1b74ea;
+}
+
+.freshmen p{
+    margin: 1% 7% ;
+    line-height: 125%;
+    width: 86%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*MonthSection Content Styling*/
+
+.monthSection{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.monthHeader{
+    padding: 2% 2% 1% 2%; 
+    text-align: left;  
+    margin:0 5.5%; 
+}
+
+.monthHeader h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+}
+
+.monthContent{
+    display: flex;
+    flex-direction: row;
+    margin:0 7%;
+}
+
+.monthSection .item:hover {
+    background-color: orange;
+    transition: all 0.5s;
+    transform: scale(1.025);
+}
+.eventIGContent,
+.studentEventContent,
+.welcomeMsgContent{
+    padding: 7% 2% 2% 2%;
+}
+
+.eventIGLink,
+.studentEventLink,
+.welcomeMsgLink{
+    padding: 3.5%;
+}
+
+.eventIGContent p,
+.studentEventContent p,
+.welcomeMsgContent p{
+    font-family: MontserratBold;
+    line-height: 150%;
+    padding: 2%;
+}
+
+.eventIGContent a,
+.studentEventContent a,
+.welcomeMsgContent a{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #1b74ea;
+}
+
+.eventIGLink p,
+.studentEventLink p,
+.welcomeMsgLink p{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #626262;
+}
+
+.eventIG,
+.studentEvent,
+.welcomeMsg{
+    display: block;
+    width: 31%;
+    margin-right: 3%;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.monthSection .item:last-of-type {
+    margin-right: 0 !important;
+}
+
+
+
+.eventIGPhoto figure img,
+.studentEventPhoto figure img,
+.welcomeMsgPhoto figure img{
+    width: 100%;
+    height: auto;
+    
+}
+
+/*Footer Styling*/
+
+footer{
+    background-color: rgb(33, 35, 48);
+    display: flex;
+    flex-direction: column;
+}
+
+.upperFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.descFooter{
+    color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-top: 1%;
+    margin-left:2.5% ;
+}
+
+.footerLogo img{
+    margin: 0.50%;
+    padding: 5% 1% 1% 15%;
+    width: 300px;
+    height: auto;
+}
+
+.footerLogo figcaption{
+    margin: 0.5% 4%;
+    padding: 3% 1% 1% 15%;
+    width: 89%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.linksFooter{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.linksFooter h2{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    margin: 2%;
+    padding: 3%;
+    width: 75%;
+}
+
+.linksFooter nav{
+    margin: 1.5%;
+    padding: 3%;
+    width: 75%;
+}
+
+.linksFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.linksFooter li{
+    margin: 1%;
+    font-size: 13px;
+    padding: 1%;
+    list-style: none;
+    color: white;
+}
+
+.linksFooter a{
+    color:white;
+    text-decoration: none;
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.linksFooter a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+.feedbackFooter{ 
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    margin-left: 2.5%;
+}
+
+.feedbackFooter h2{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    margin: 2% 2% 0% 2%;
+    padding: 3% 3% 0% 4%;
+    width: 100%;
+}
+
+.feedbackFooter form{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2% 2% 2%;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+.feedbackFooter label{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    margin: 2%;
+    padding: 0%;
+}
+
+.feedbackFooter input{
+    margin: 2%;
+    padding: 0%;
+    width: 50%;
+    height: auto;
+}
+
+.feedbackFooter textarea{
+    margin: 2%;
+    padding: 0%;
+    width: 90%;
+    height: 150px;
+}
+
+.feedbackFooter .submitBtn{
+    margin: 2% ;
+    padding: 0%;
+    width: 20%;
+    height: auto;
+}
+
+.lowerFooter{
+    background-color: rgb(43, 45, 58);
+    color: rgb(94, 97, 106);
+}
+
+.lowerFooter section{
+    text-align: center;
+    padding: 0.5%;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:1200px){	
+    .headerLogo figure img {
+        width: 140px;
+    }
+    .menu,
+    .navList ul {
+        display: block;
+    }
+    .navContent {
+        justify-content:space-between;
+        align-items: center;
+        position: relative;
+    }
+    .navList {
+        padding: 0;
+        width: auto;
+        margin: 0px 0.5% 0px 0%
+    }
+    .navList nav {
+        width: 300px;
+        padding: 5px 0 10px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        display:none;
+    }
+    .banner {
+        text-align: center;
+    }
+    .bannerEventLogo h1 {
+        font-size: 50px;
+    }
+    .bannerEventLogo span {
+        font-size: 30px;
+    }
+    .bannerEventLogo p {
+        font-size: 20px;
+    }
+    .freshmenHeader,
+    .freshmen p,
+    .monthHeader,
+    .monthContent{
+        margin: 2%;
+        padding: 0;
+    }
+    .freshmen p {
+        width: 96%;
+    }
+    .upperFooter {
+        display: block;
+    }
+    .descFooter,
+    .linksFooter,
+    .feedbackFooter {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .footerLogo img,
+    .footerLogo figcaption,
+    .linksFooter h2,
+    .linksFooter nav,
+    .feedbackFooter h2,
+    .feedbackFooter form,
+    .feedbackFooter label {
+        margin: 0;
+        padding: 0;
+    }
+    .footerLogo figcaption,
+    .linksFooter h2,
+    .linksFooter nav {
+        width: 100%;
+    }
+    .linksFooter li {
+        padding: 0;
+    }
+    .feedbackFooter input,
+    .feedbackFooter textarea,
+    .feedbackFooter .submitBtn {
+        margin: 2% 0;
+        line-height: 36px;
+        width: 100%;
+    }
+    .feedbackFooter .submitBtn {
+        height: 40px;
+    }
+}
+@media (max-width:768px){	
+    .bannerEventLogo {
+        height: 410px;
+    }
+    .bannerEventLogo h1 {
+        padding-top: 14%;
+    }
+    .freshmenHeader h1,
+    .monthHeader h1 {
+        font-size: 24px;
+    }
+    .freshmen p {
+        font-size: 16px;
+    }
+    .monthContent {
+        flex-wrap: wrap;
+    }
+    .eventIG, .studentEvent, .welcomeMsg {
+        width: 48%;
+        margin-bottom: 4%;
+    }
+    .monthSection .item:nth-of-type(2n) {
+        margin-right: 0 !important;
+    }
+    .eventIGContent p, .studentEventContent p, .welcomeMsgContent p {
+        font-size: 14px;
+    }
+    .eventIGLink p, .studentEventLink p, .welcomeMsgLink p {
+        font-size: 12px;
+    }
+}
+@media (max-width:474px){	
+    .bannerEventLogo {
+        height: 280px;
+    }
+    .eventIG, .studentEvent, .welcomeMsg {
+        width: 100%;
+        margin-bottom: 2%;
+        margin-right: 0 !important;
+    }
+}
